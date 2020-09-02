@@ -1,3 +1,5 @@
+# General
+
 awesome:
 	# Install awesome, an awesome window tiling manager
 	sudo apt install awesome
@@ -37,6 +39,8 @@ tmux:
 link:
 	# Symlink the .config files from
 
+# Languages
+
 rust:	
 	# Install rust
 	$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
@@ -45,9 +49,12 @@ python:
 	# Install python
 	sudo ln -s /usr/bin/python3 /usr/bin/python
 
+# Apps
+
 discord:
 	# Install discord
 	sudo apt update
 	sudo apt install gdebi-core wget
 	wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 	sudo gdebi ~/discord.deb 
+
