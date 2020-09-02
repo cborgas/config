@@ -1,9 +1,5 @@
 # General
 
-awesome:
-	# Install awesome, an awesome window tiling manager
-	sudo apt install awesome
-
 fish:
 	# Install fish
 	sudo apt install fish
@@ -35,9 +31,6 @@ autojump:
 
 tmux:
 	sudo apt-get install tmux
-
-link:
-	# Symlink the .config files from
 
 # Languages
 
