@@ -1,33 +1,14 @@
 # General
 
-fish:
-	# Install fish
-	sudo apt install fish
-
-	# Make fish my default shell
-	sudo chsh -s `which fish`
-
-	# Install oh-my-fish
-	curl -L https://get.oh-my.fish > install; \
-	fish install --path=~/.local/share/omf --config=~/.config/omf
-
-	# Install beloglazov (fish theme)
-	omf install beloglazov
-
-fisher:
-	# Install fisher, a plugin manager for fish
-	curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-
-	# Add base16 for fish
-	fisher add tomyun/base16-fish
-
-autojump:
-	# Install autojump
-	# requires python
-	cd ../;
-	git clone https://github.com/wting/autojump.git;
-	cd autojump;
-	./install.py;
+git:
+	git config --global user.email "carlborgas@gmail.com"
+	git config --global user.name "Carl Borgas"
+	git config --global alias.st 'status'
+	git config --global alias.ll 'log --oneline'
+	git config --global alias.last 'log -1 HEAD --stat'
+	git config --global alias.cm 'commit -m'
+	git config --global alias.d 'diff'
+	git config --global alias.gl 'config --global -l'
 
 tmux:
 	sudo apt-get install tmux
