@@ -1,0 +1,19 @@
+live_config_reload = true
+
+[env]
+TERM = "alacritty"
+
+[scrolling]
+history = 0
+multiplier = 3
+
+[font]
+size = 16.0
+
+[window]
+opacity = 1.0
+startup_mode = "Windowed"
+
+[window.padding]
+x = 10
+y = 10
