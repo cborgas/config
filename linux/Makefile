@@ -16,6 +16,7 @@ tmux:
 config:
 	# Move config files
 	cp ../tmux/.tmux.conf ~/.tmux.conf
+	cp ../.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 # Languages
 
@@ -40,7 +41,5 @@ php:
 discord:
 	# Install discord
 	sudo apt update
-	sudo apt install gdebi-core wget
-	wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-	sudo gdebi ~/discord.deb 
-
+	sudo apt upgrade
+	sudo snap install discord
